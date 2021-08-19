@@ -1,0 +1,10 @@
+name: ci
+on:
+  pull_request:
+    paths-ignore:
+      - 'scripts/**'
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - run: echo Generic
