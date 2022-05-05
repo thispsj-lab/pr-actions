@@ -4,7 +4,12 @@ on:
     paths:
       - 'scripts/**'
 jobs:
+  slow-job:
+    runs-on: windows-latest
+    steps:
+      - run: 'sleep 180'
   build:
+    needs: [slow-job]
     runs-on: windows-latest
     steps:
       - run: ' echo "Build succeeded" '
