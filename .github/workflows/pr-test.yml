@@ -4,6 +4,10 @@ on:
     paths:
       - 'scripts/**'
 jobs:
+  setup-build:
+  runs-on: ubuntu-latest
+  steps:
+    - run: sleep 20
   build:
     runs-on: ubuntu-latest
     steps:
