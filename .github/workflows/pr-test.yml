@@ -10,6 +10,7 @@ jobs:
       - run: sleep 20
   build:
     runs-on: ubuntu-latest
+    needs: [setup-build]
     steps:
       - run: sleep 50
       - run: ' echo "Build succeeded" '
