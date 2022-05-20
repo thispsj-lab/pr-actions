@@ -7,7 +7,7 @@ jobs:
   setup-build:
     runs-on: ubuntu-latest
     if: ${{ paths[*]=='scripts/**' }}
-    scripts:
+    steps:
       - run: echo Yeah
   build:
     runs-on: windows-latest
