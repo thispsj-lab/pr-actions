@@ -6,7 +6,7 @@ on:
 jobs:
   setup-build:
     runs-on: ubuntu-latest
-    if: ${{ paths[*]=='scripts/**' }}
+    if: ${{ on.pull_request.paths[*] != 'scripts/**' }}
     steps:
       - run: echo Yeah
   build:
