@@ -4,11 +4,6 @@ on:
     paths-ignore:
       - 'scripts/**'
 jobs:
-  setup-build:
-    runs-on: ubuntu-latest
-    if: ${{ paths[*]=='scripts/**' }}
-    steps:
-      - run: echo Yeah
   build:
     runs-on: windows-latest
     steps:
