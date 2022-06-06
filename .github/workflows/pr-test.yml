@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'scripts/**'
+      - '!**.md'
 jobs:
   setup-build:
     runs-on: ubuntu-latest
