@@ -1,8 +1,9 @@
 name: ci
 on:
   pull_request:
-    paths-ignore:
-      - 'scripts/**'
+    paths:
+      - '!scripts/**'
+      - '**.md'
 jobs:
   build:
     runs-on: windows-latest
