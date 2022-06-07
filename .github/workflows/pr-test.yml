@@ -8,7 +8,7 @@ jobs:
   setup-build:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 20
+      - run: sleep 40
   build:
     runs-on: ubuntu-latest
     needs: [setup-build]
